@@ -1,13 +1,10 @@
 package org.sort;
 
-
-
-import org.sort.methods.BaseSort;
 import org.sort.methods.BubbleSort;
 
 import java.util.ArrayList;
 
-public class Main extends BaseSort{
+public class Main {
     public static void main(String[] args) {
         int size = 12;
         BubbleSort unsortedList = new BubbleSort();
@@ -15,10 +12,5 @@ public class Main extends BaseSort{
         unsortedList.displayNumbers(list);
         unsortedList.sort(list);
         unsortedList.displayNumbers(list);
-    }
-
-    @Override
-    public ArrayList<Integer> sort(ArrayList<Integer> unsortedNumbers) {
-        return null;
     }
 }
