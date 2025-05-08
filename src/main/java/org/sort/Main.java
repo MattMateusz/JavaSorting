@@ -1,6 +1,7 @@
 package org.sort;
 
 import org.sort.methods.BubbleSort;
+import org.sort.methods.DoubleSelectSort;
 import org.sort.methods.SelectSort;
 
 import java.util.ArrayList;
@@ -14,10 +15,11 @@ public class Main {
         unsortedList.displayNumbers(unsortedList.sort(list));
 
         int newSize = 20;
-        SelectSort newList = new SelectSort();
+        DoubleSelectSort newList = new DoubleSelectSort();
         ArrayList<Integer> numbers = newList.getNumbers(newSize);
         System.out.println("\r\n");
         newList.displayNumbers(numbers);
-        newList.displayNumbers(newList.sort(numbers));
+        newList.sort(numbers);
+        newList.displayNumbers(numbers);
     }
 }

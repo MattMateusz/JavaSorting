@@ -8,13 +8,13 @@ public class SelectSort extends BaseSort{
     @Override
     public ArrayList<Integer> sort(ArrayList<Integer> unsortedNumbers) {
         for(int i = 0; i < unsortedNumbers.size() - 1; i++) {
-            int index = findIndeksWithSmalestValue(unsortedNumbers, i);
+            int index = findIndexWithSmallestValue(unsortedNumbers, i);
             swap(unsortedNumbers, index, i);
         }
         return unsortedNumbers;
     }
 
-    public static Integer findIndeksWithSmalestValue(ArrayList<Integer> numbers, int crazyNumber) {
+    public static Integer findIndexWithSmallestValue(ArrayList<Integer> numbers, int crazyNumber) {
         int index = crazyNumber;
         int value = numbers.get(crazyNumber);
         for(int i = crazyNumber; i < numbers.size(); i++) {
