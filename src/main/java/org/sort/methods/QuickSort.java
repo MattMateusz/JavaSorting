@@ -2,6 +2,8 @@ package org.sort.methods;
 
 import java.util.ArrayList;
 
+import static java.util.Collections.swap;
+
 public class QuickSort extends BaseSort{
     @Override
     public ArrayList<Integer> sort(ArrayList<Integer> unsortedNumbers) {
@@ -29,11 +31,5 @@ public class QuickSort extends BaseSort{
         }
         swap(list, i + 1, high);
         return i + 1;
-    }
-
-    static void swap(ArrayList<Integer> list, int i, int j) {
-        int temp = list.get(i);
-        list.set(i, list.get(j));
-        list.set(j, temp);
     }
 }
